@@ -1,0 +1,11 @@
+case_id,suction_pressure_kpa,discharge_pressure_kpa,flow_rate_gpm,rated_flow_gpm,specific_gravity,pump_efficiency_pct,boundary_intent
+BC-01,0.0,150.0,1.0,1.0,0.85,100.0,Exact accepted boundaries
+BC-02,-0.001,150.0,1.0,1.0,0.85,100.0,Just below suction lower limit
+BC-03,0.0,150.0,0.001,1.0,0.85,100.0,Very small positive flow
+BC-04,0.0,150.0,0.0,1.0,0.85,100.0,Exact disallowed flow boundary
+BC-05,100.0,100.001,50.0,50.0,1.0,60.0,Barely positive pressure differential; flow at rating
+BC-06,100.0,100.0,50.0,50.0,1.0,60.0,Exact invalid pressure relationship
+BC-07,100.0,250.0,50.001,50.0,1.0,60.0,Just above rated flow
+BC-08,100.0,250.0,50.0,50.0,1.0,60.0,Flow exactly at rating
+BC-09,100.0,250.0,50.0,60.0,0.001,60.0,Very small positive specific gravity
+BC-10,100.0,250.0,50.0,60.0,1.0,100.001,Just above efficiency maximum

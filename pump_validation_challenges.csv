@@ -1,0 +1,13 @@
+case_id,suction_pressure_kpa,discharge_pressure_kpa,flow_rate_gpm,rated_flow_gpm,specific_gravity,pump_efficiency_pct,scenario_note
+VC-01,110,420,145,180,1.0,72,Baseline normal case
+VC-02,-5,420,145,180,1.0,72,One pressure value is outside supported model
+VC-03,110,-1,145,180,1.0,72,One pressure value is outside supported model
+VC-04,110,420,0,180,1.0,72,No forward flow
+VC-05,110,420,145,0,1.0,72,Invalid pump rating
+VC-06,110,420,145,180,0,72,Fluid property creates invalid calculation
+VC-07,110,420,145,180,1.0,0,Efficiency at lower unsupported limit
+VC-08,110,420,145,180,1.0,105,Efficiency beyond supported maximum
+VC-09,420,110,145,180,1.0,72,Pressures individually non-negative; relationship is wrong
+VC-10,200,200,145,180,1.0,72,Equal pressures test pump-adds-pressure assumption
+VC-11,110,420,200,180,1.0,72,Requested flow exceeds rating
+VC-12,0,150,1,1,0.85,100,Exact accepted boundaries for several fields
